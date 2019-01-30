@@ -74,7 +74,7 @@ Your default browser should open a new window or tab with the website/app ready 
 
 ## Known Bugs
 
-## Support and contact details
+## Support
 Scott Bergler :: commandinghands@gmail.com
 
 ## Technologies Used
