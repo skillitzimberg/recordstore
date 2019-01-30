@@ -1,8 +1,6 @@
 # RecordStore
 An online record shop. Tutorial project from [Epicodus](https://www.learnhowtoprogram.com).
 
-The initial project directories and files were generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
 ### Author
 Scott Bergler & Michael Brown
 

@@ -1,6 +1,8 @@
 ## Installation & Setup
 These instructions assume you're using Mac OSx.  
 
+The initial project directories and files were generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
 Here are some links in case you need information about setup for other operating systems:  
 [Angular](https://angular.io/);
 [AngularFire2](https://github.com/angular/angularfire2);
