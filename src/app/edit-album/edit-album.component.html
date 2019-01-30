@@ -1,0 +1,23 @@
+<h4>Edit Album</h4>
+
+<div>
+  <label>New Album Title:</label>
+  <input [(ngModel)]="selectedAlbum.title">
+  <br>
+
+  <label>New Album Artist:</label>
+  <input [(ngModel)]="selectedAlbum.artist">
+  <br>
+
+  <label>New Album Description:</label>
+  <input [(ngModel)]="selectedAlbum.description">
+  <br>
+
+  <label>New Album Price:</label>
+  <input [(ngModel)]="selectedAlbum.price">
+  <br>
+
+  <button (click)="beginUpdatingAlbum(selectedAlbum)" class="btn btn-primary">Update</button>
+
+  <button (click)="beginDeletingAlbum(selectedAlbum)" class="btn btn-danger">Delete</button>
+</div>

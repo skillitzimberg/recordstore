@@ -15,6 +15,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 import { routing } from './app-routing.module';
 import { masterFirebaseConfig } from './api-keys';
+import { EditAlbumComponent } from './edit-album/edit-album.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     AboutComponent,
     MarketplaceComponent,
     AlbumDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditAlbumComponent
   ],
 
   imports: [

@@ -1,7 +1,20 @@
-<p>SHOP</p>
-<div *ngFor="let album of albums | async" (click)="goToDetailPage(album)" class="panel panel-default">
-  <div class="panel-body">
-    <h3><em>{{ album.title }}</em> <span class="album-artist" color:grey font-size:12pt>by {{ album.artist }}</span></h3>
-    <h1>{{ album.$key }}</h1>
+<div *ngFor="let album of albums | async" class="card card-default">
+  <div class="card-body">
+
+    <h3 (click)="goToDetailPage(album)">
+      <em>
+        {{ album.title }}
+      </em>
+      by {{ album.artist }}
+    </h3>
+
+    <p>${{ album.price }}</p>
+
+    <div *ngIf="currentRoute === '/admin'">
+      {{ album.description }}
+      <hr>
+    </div>
+
+    <app-edit-album [selectedAlbum]="album"></app-edit-album>
   </div>
 </div>
