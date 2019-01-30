@@ -1,5 +1,5 @@
 # RecordStore
-An online record shop.
+An online record shop. Tutorial project from [Epicodus](https://www.learnhowtoprogram.com).
 
 The initial project directories and files were generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -7,7 +7,6 @@ The initial project directories and files were generated with [Angular CLI](http
 Scott Bergler & Michael Brown
 
 ## Table of contents
-**[Description](#description)**<br>
 **[Resources](#resources)**<br>
 **[Setup & Installation](#setup-and-installation)**<br>
 **[Known Bugs](#known-bugs)**<br>
@@ -16,7 +15,7 @@ Scott Bergler & Michael Brown
 **[License](#license)**<br>
 **[Copyright](#copyright)**<br>
 
-## Setup and Installation
+## Resources
 See [SETUP.md](./SETUP.md) for details about tools you may need to install and use to work on and use this project on your Mac.  
 
 Here are some links in case you need information about setup for other operating systems:  
@@ -28,7 +27,52 @@ Here are some links in case you need information about setup for other operating
 [Node JS](https://nodejs.org/en/);
 [TypeScript](https://www.typescriptlang.org/).
 
-## Resources
+## Setup and Installation
+Fork the repository from [GitHub](https://github.com/skillitzimberg/recordstore).  
+Clone your forked repository.  
+
+Use your preferred command line/terminal to navigate into the directory:
+```
+cd recordstore/
+```
+#### Setup for Firebase database usage
+Go to [Firebase](https://firebase.google.com/).
+Set up an account for yourself. If you already have a Google or Gmail account, you already have access - just sign in.  
+Once you've created an account, you should be taken to a user dashboard area, with an option to Create a New Project. Select this option, provide a name for your new project, and select your Country/region from the drop-down menu.  
+
+You'll then be taken to an "Overview" area. Where you'll be offered three options:  
+
+- Add Firebase to your iOS app
+- Add Firebase to your Android app
+- Add Firebase to your web app
+
+Select Add Firebase to your web app. Firebase should respond with a pop-up modal window. Keep the information in this modal handy.  
+
+Create a new file called api-keys.ts in the src/app directory. This file has been added to the .gitingore, so your credentials will not be pushed to Github.  
+
+Copy your Firebase credentials into api-keys.ts:
+```
+export const masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+```
+
+(The x's represent your specific information just for this example. Replace them with your actual credentials.)
+
+#### Run the application
+In the project root directory run the command:
+```
+npm install
+```
+Run the command:
+```
+ng serve --open
+```
+Your default browser should open a new window or tab with the website/app ready to use.
 
 ## Known Bugs
 
@@ -36,8 +80,6 @@ Here are some links in case you need information about setup for other operating
 Scott Bergler :: commandinghands@gmail.com
 
 ## Technologies Used
-(This wonderful table was lovingly pilfered from [Tanvi Garg](https://github.com/TanviCodeLife) and modestly edited for my own sensibilities.)
-
 For versions and a full list of dependencies, plugins, and scripts see the "devDependencies" section in [package.json](./package.json).  
 
 | Dependency | Description |
