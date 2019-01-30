@@ -17,12 +17,12 @@ Scott Bergler & Michael Brown
 See [SETUP.md](./SETUP.md) for details about tools you may need to install and use to work on and use this project on your Mac.  
 
 Here are some links in case you need information about setup for other operating systems:  
-[Angular](https://angular.io/);
-[Angularfire](https://github.com/angular/angularfire2);
-[Firebase](https://firebase.google.com/);
-[Karma](https://karma-runner.github.io/latest/index.html);
-[Jasmine](https://jasmine.github.io/);
-[Node JS](https://nodejs.org/en/);
+[Angular](https://angular.io/);  
+[Angularfire](https://github.com/angular/angularfire2);  
+[Firebase](https://firebase.google.com/);  
+[Karma](https://karma-runner.github.io/latest/index.html);  
+[Jasmine](https://jasmine.github.io/);  
+[Node JS](https://nodejs.org/en/);  
 [TypeScript](https://www.typescriptlang.org/).
 
 ## Setup and Installation
@@ -117,7 +117,7 @@ For versions and a full list of dependencies, plugins, and scripts see the "devD
 | karma-webpack | Use webpack to preprocess files in Karma |
 | style-loader | adds CSS to the DOM by injecting a `<style>` tag |
 | uglifyjs-webpack-plugin | Minifies JavaScript |
-| webpack | A module bundler used to bundle JavaScript files and additional resources   *Note - Remove carrot sign ^ in version number if webpack issues occur* |
+| webpack | A module bundler used to bundle JavaScript files and additional resources |
 | webpack-cli | Use webpack from command line |
 | webpack-dev-server | Provides live reloading during development |
 | css-loader and style-loader | renders images in DOM when `<img>` tag is used |
