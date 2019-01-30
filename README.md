@@ -1,7 +1,7 @@
 # RecordStore
-An online record shop. Tutorial project from [Epicodus](https://www.learnhowtoprogram.com).
+An online record shop tutorial project from [Epicodus](https://www.learnhowtoprogram.com).
 
-### Author
+### Authors
 Scott Bergler & Michael Brown
 
 ## Table of contents
@@ -17,13 +17,13 @@ Scott Bergler & Michael Brown
 See [SETUP.md](./SETUP.md) for details about tools you may need to install and use to work on and use this project on your Mac.  
 
 Here are some links in case you need information about setup for other operating systems:  
-[Angular](https://angular.io/);  
-[Angularfire](https://github.com/angular/angularfire2);  
-[Firebase](https://firebase.google.com/);  
-[Karma](https://karma-runner.github.io/latest/index.html);  
-[Jasmine](https://jasmine.github.io/);  
-[Node JS](https://nodejs.org/en/);  
-[TypeScript](https://www.typescriptlang.org/).
+[Angular](https://angular.io/)  
+[Angularfire](https://github.com/angular/angularfire2)  
+[Firebase](https://firebase.google.com/)  
+[Karma](https://karma-runner.github.io/latest/index.html)  
+[Jasmine](https://jasmine.github.io/)  
+[Node JS](https://nodejs.org/en/)  
+[TypeScript](https://www.typescriptlang.org/)
 
 ## Setup and Installation
 Fork the repository from [GitHub](https://github.com/skillitzimberg/recordstore).  
@@ -66,11 +66,11 @@ To seed your database with a few entries:
 
 - click on the Database option in the left-hand navigational menu.
 
-- celect the 3 vertical dots on the right-hand side of the grey bar with your database URL on it. (It's right next to the + and - buttons). This should bring up a small menu.
+- select the 3 vertical dots on the right-hand side of the grey bar with your database URL on it. (It's right next to the + and - buttons). This should bring up a small menu.
 
-- celect Import JSON from this menu. This will result in a modal window prompting you to upload a file.
+- select Import JSON from this menu. This will result in a modal window prompting you to upload a file.
 
-- locate the sample-albums.json file from your project, and upload it.
+- locate the sample-albums.json file from the project, and upload it.
 
 After the file is uploaded, you should see data in your database.
 
@@ -79,11 +79,13 @@ In the project root directory run the command:
 ```
 npm install
 ```
+
 Run the command:
 ```
 ng serve --open
 ```
-Your default browser should open a new window or tab with the website/app ready to use.
+
+Your default browser should open a new window or tab with the website/app ready to use at [localhost:4200](localhost:4200).
 
 ## Known Bugs
 
