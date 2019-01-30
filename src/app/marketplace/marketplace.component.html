@@ -1,4 +1,4 @@
-<div *ngFor="let album of albums | async" class="card card-default">
+<div *ngFor="let album of albums" class="card card-default">
   <div class="card-body">
 
     <h3 (click)="goToDetailPage(album)">
@@ -13,8 +13,8 @@
     <div *ngIf="currentRoute === '/admin'">
       {{ album.description }}
       <hr>
+      <app-edit-album [selectedAlbum]="album"></app-edit-album>
     </div>
 
-    <app-edit-album [selectedAlbum]="album"></app-edit-album>
   </div>
 </div>

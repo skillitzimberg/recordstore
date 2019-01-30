@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 import { Album } from './album.model';
-import { ALBUMS } from './albumFakeDB';
 
 @Injectable()
 export class AlbumService {
   albums: FirebaseListObservable<any[]>;
 
-  constructor(private database: AngularFireDatabase) {
+  constructor(
+    private database: AngularFireDatabase
+  ) {
     this.albums = database.list('albums');
   }
 
