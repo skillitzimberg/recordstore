@@ -48,7 +48,7 @@ Select Add Firebase to your web app. Firebase should respond with a pop-up modal
 
 Create a new file called api-keys.ts in the src/app directory. This file has been added to the .gitingore, so your credentials will not be pushed to Github.  
 
-Copy your Firebase credentials into api-keys.ts:
+Copy your Firebase credentials into api-keys.ts (the x's represent your specific information just for this example. Replace them with your actual credentials):
 ```
 export const masterFirebaseConfig = {
     apiKey: "xxxx",
@@ -59,7 +59,20 @@ export const masterFirebaseConfig = {
   };
 ```
 
-(The x's represent your specific information just for this example. Replace them with your actual credentials.)
+NOTE: The exported constant in the above code must be named masterFirebaseConfig. If you decide to rename it here you will need to find masterFirebaseConfig everywhere in the project and replace it with your constant's name.
+
+To seed your database with a few entries:
+- go to your Firebase Console and select your project's database.  
+
+- click on the Database option in the left-hand navigational menu.
+
+- celect the 3 vertical dots on the right-hand side of the grey bar with your database URL on it. (It's right next to the + and - buttons). This should bring up a small menu.
+
+- celect Import JSON from this menu. This will result in a modal window prompting you to upload a file.
+
+- locate the sample-albums.json file from your project, and upload it.
+
+After the file is uploaded, you should see data in your database.
 
 #### Run the application
 In the project root directory run the command:
