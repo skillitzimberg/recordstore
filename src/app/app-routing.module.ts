@@ -12,7 +12,8 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'store', component: MarketplaceComponent },
   { path: 'albums/:id', component: AlbumDetailComponent },
-  { path: 'admin', component: AdminComponent }
+  { path: 'admin', component: AdminComponent },
+  { path: 'albums/edit/:id', component: AdminComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

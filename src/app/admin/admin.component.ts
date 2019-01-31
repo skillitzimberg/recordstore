@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
 import { Album } from '../album.model';
+import { Component, OnInit } from '@angular/core';
 import { AlbumService } from '../album.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -10,8 +11,11 @@ import { AlbumService } from '../album.service';
 })
 
 export class AdminComponent implements OnInit {
-
-  constructor(private albumService: AlbumService) { }
+  currentRoute: string = this.router.url;
+  constructor(
+    private albumService: AlbumService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }

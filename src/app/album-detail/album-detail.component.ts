@@ -15,7 +15,7 @@ import { AlbumService } from '../album.service';
 })
 
 export class AlbumDetailComponent implements OnInit {
-
+  
   albumId: string = null;
   albumToDisplay;
 
